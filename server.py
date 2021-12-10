@@ -21,7 +21,7 @@ def sendList(server, list, address):
         server.sendto(item.encode(FORMAT),address)
         #cho phan hoi
         server .recv(1024)
-
+    
     message = "end"
     server.sendto(message.encode(FORMAT), address)
 
